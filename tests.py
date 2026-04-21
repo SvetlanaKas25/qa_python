@@ -22,3 +22,10 @@ class TestBooksCollector:
 
     # напиши свои тесты ниже
     # чтобы тесты были независимыми в каждом из них создавай отдельный экземпляр класса BooksCollector()
+
+    def test_add_new_book_duplicate_not_add(self):
+        collector = BooksCollector()
+        collector.add_new_book('Гордость и предубеждение')
+        collector.add_new_book('Гордость и предубеждение')
+
+        assert len(collector.get_books_genre()) == 1
