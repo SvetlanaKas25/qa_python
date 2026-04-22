@@ -53,4 +53,15 @@ class TestBooksCollector:
         
         assert collector.get_book_genre('Неизвестная книга') is None
     
+    def test_get_books_with_specific_genre_valid_genre_returns_matching_books(self):
+        collector = BooksCollector()
+        collector.add_new_book('Приключения Шерлока Холмса')
+        collector.add_new_book('Десять негритят')
+        collector.set_book_genre('Приключения Шерлока Холмса', 'Детективы')
+        collector.set_book_genre('Десять негритят', 'Детективы')
+        
+        result = collector.get_books_with_specific_genre('Детективы')
+        assert 'Приключения Шерлока Холмса' in result
+        assert 'Десять негритят' in result
+
     
