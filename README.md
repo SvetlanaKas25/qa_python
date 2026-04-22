@@ -12,13 +12,13 @@
 Проверяется, что метод get_book_genre возвращает None для несуществующей книги.
 
 Тест: test_get_books_with_specific_genre_valid_genre_returns_matching_books
-Проверяется, что метод test_get_books_with_specific_genre возвращает список книг для существующего жанра.
+Проверяется, что метод get_books_with_specific_genre возвращает список книг для существующего жанра.
 
 Тест: test_get_books_genre_empty_collection_returns_empty_dictionary
-Проверяется, что метод test_get_books_genre метод возвращает пустой словарь, если книги не добавлялись.
+Проверяется, что метод get_books_genre метод возвращает пустой словарь, если книги не добавлялись.
 
 Тест: test_get_books_for_children_adult_books_not_included
-Проверяется, что метод test_get_books_for_children книги с возрастным ограничением не включает в результат.
+Проверяется, что метод get_books_for_children книги с возрастным ограничением не включает в результат.
 
 Тест: test_add_book_in_favorites_one_book_added_to_favorites
 Проверяется, что метод add_book_in_favorites добавляет книгу в избранное.
