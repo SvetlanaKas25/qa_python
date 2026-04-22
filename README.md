@@ -11,3 +11,6 @@
 Тест: test_get_book_genre_nonexistent_book_not_get_genre
 Проверяется, что метод get_book_genre возвращает None для несуществующей книги.
 
+Тест: test_get_books_with_specific_genre_valid_genre_returns_matching_books
+Проверяется, что метод test_get_books_with_specific_genre возвращает список книг для существующего жанра.
+
