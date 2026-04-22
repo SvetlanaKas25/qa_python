@@ -14,3 +14,8 @@
 Тест: test_get_books_with_specific_genre_valid_genre_returns_matching_books
 Проверяется, что метод test_get_books_with_specific_genre возвращает список книг для существующего жанра.
 
+Тест: test_get_books_genre_empty_collection_returns_empty_dictionary
+Проверяется, что метод test_get_books_genre метод возвращает пустой словарь, если книги не добавлялись.
+
+Тест: test_get_books_for_children_adult_books_not_included
+Проверяется, что метод test_get_books_for_children книги с возрастным ограничением не включает в результат.
