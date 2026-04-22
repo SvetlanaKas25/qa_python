@@ -40,3 +40,10 @@ class TestBooksCollector:
         collector.add_new_book(book_name)
 
         assert len(collector.get_books_genre()) == 0
+
+    def test_set_book_genre_valid_book_and_genre_set_genre(self):
+        collector = BooksCollector()
+        collector.add_new_book('Приключения Шерлока Холмса')
+        collector.set_book_genre('Приключения Шерлока Холмса', "Детективы")
+
+        assert collector.get_book_genre('Приключения Шерлока Холмса') == "Детективы"
