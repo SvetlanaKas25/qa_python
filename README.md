@@ -19,3 +19,7 @@
 
 Тест: test_get_books_for_children_adult_books_not_included
 Проверяется, что метод test_get_books_for_children книги с возрастным ограничением не включает в результат.
+
+Тест: test_add_book_in_favorites_one_book_added_to_favorites
+Проверяется, что метод add_book_in_favorites добавляет книгу в избранное.
+
