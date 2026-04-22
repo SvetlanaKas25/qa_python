@@ -8,3 +8,6 @@
 Тест: test_set_book_genre_valid_book_and_genre_set_genre
 Проверяется, что метод set_book_genre устанавливает жанр для существующей книги из списка жанров.
 
+Тест: test_get_book_genre_nonexistent_book_not_get_genre
+Проверяется, что метод get_book_genre возвращает None для несуществующей книги.
+
