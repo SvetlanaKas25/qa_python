@@ -77,4 +77,11 @@ class TestBooksCollector:
         result = collector.get_books_for_children()
         assert "Ужасы" not in result
 
+    def test_add_book_in_favorites_one_book_added_to_favorites(self):
+        collector = BooksCollector()
+        collector.add_new_book('Приключения Шерлока Холмса')
+        collector.add_book_in_favorites('Приключения Шерлока Холмса')
+        
+        assert 'Приключения Шерлока Холмса' in collector.get_list_of_favorites_books()
+    
     
