@@ -69,4 +69,12 @@ class TestBooksCollector:
         
         assert collector.get_books_genre() == {}
     
+    def test_get_books_for_children_adult_books_not_included(self):
+        collector = BooksCollector()
+        collector.add_new_book('Пила')
+        collector.set_book_genre('Пила', 'Ужасы')
+        
+        result = collector.get_books_for_children()
+        assert "Ужасы" not in result
+
     
