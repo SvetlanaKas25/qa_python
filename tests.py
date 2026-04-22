@@ -64,4 +64,9 @@ class TestBooksCollector:
         assert 'Приключения Шерлока Холмса' in result
         assert 'Десять негритят' in result
 
+    def test_get_books_genre_empty_collection_returns_empty_dictionary(self):
+        collector = BooksCollector()
+        
+        assert collector.get_books_genre() == {}
+    
     
