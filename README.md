@@ -33,3 +33,6 @@
 Добавлен тест: test_add_new_book_add_one_book
 Проверяет позитивный сценарий добавления одной книги в коллекцию для метода add_new_book
 
+Добавлен тест: test_delete_book_from_favorites_one_book_removed_from_favorites
+Проверяет успешное удаление книги из избранного методом delete_book_from_favorites.
+
