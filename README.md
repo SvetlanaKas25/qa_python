@@ -23,3 +23,6 @@
 Тест: test_add_book_in_favorites_one_book_added_to_favorites
 Проверяется, что метод add_book_in_favorites добавляет книгу в избранное.
 
+Тест: test_delete_book_from_favorites_nonexistent_book_no_changes_to_favorites
+Проверяется, что метод delete_book_from_favorites при попытке удалить несуществующую книгу, не изменяет список избранного.
+
