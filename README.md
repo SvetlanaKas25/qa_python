@@ -29,3 +29,7 @@
 Тест: test_get_list_of_favorites_books_with_books_returns_list_of_favorites
 Проверяется, что метод get_list_of_favorites_books возвращает список, включающий в себя только те книги, которые были добавлены в избранное.
 
+Доработки ПОСЛЕ РЕВЬЮ:
+Добавлен тест: test_add_new_book_add_one_book
+Проверяет позитивный сценарий добавления одной книги в коллекцию для метода add_new_book
+
