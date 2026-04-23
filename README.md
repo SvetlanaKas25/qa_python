@@ -26,3 +26,6 @@
 Тест: test_delete_book_from_favorites_nonexistent_book_no_changes_to_favorites
 Проверяется, что метод delete_book_from_favorites при попытке удалить несуществующую книгу, не изменяет список избранного.
 
+Тест: test_get_list_of_favorites_books_with_books_returns_list_of_favorites
+Проверяется, что метод get_list_of_favorites_books возвращает список, включающий в себя только те книги, которые были добавлены в избранное.
+
