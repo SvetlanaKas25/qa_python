@@ -93,4 +93,14 @@ class TestBooksCollector:
         assert 'Приключения Шерлока Холмса' in collector.get_list_of_favorites_books()
         assert len(collector.get_list_of_favorites_books()) == 1
     
+    def test_get_list_of_favorites_books_with_books_returns_list_of_favorites(self):
+        collector = BooksCollector()
+        collector.add_new_book ('Книга для Избранного')
+        collector.add_book_in_favorites('Книга для Избранного')
+        collector.add_new_book('Книга не для Избранного')
+        result = collector.get_list_of_favorites_books()
+        
+        assert 'Книга для Избранного' in result
+        assert 'Книга не для Избранного' not in result
+    
     
