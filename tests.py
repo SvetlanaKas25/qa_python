@@ -82,7 +82,7 @@ class TestBooksCollector:
         collector.set_book_genre('Пила', 'Ужасы')
         
         result = collector.get_books_for_children()
-        assert "Ужасы" not in result
+        assert 'Пила' not in result
 
     def test_add_book_in_favorites_one_book_added_to_favorites(self):
         collector = BooksCollector()
