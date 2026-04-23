@@ -21,8 +21,8 @@ class TestBooksCollector:
         # словарь books_rating, который нам возвращает метод get_books_rating, имеет длину 2
         assert len(collector.get_books_genre()) == 2
 
-    # напиши свои тесты ниже
-    # чтобы тесты были независимыми в каждом из них создавай отдельный экземпляр класса BooksCollector()
+        # напиши свои тесты ниже
+        # чтобы тесты были независимыми в каждом из них создавай отдельный экземпляр класса BooksCollector()
 
     def test_add_new_book_duplicate_not_add(self):
         collector = BooksCollector()
@@ -102,5 +102,4 @@ class TestBooksCollector:
         
         assert 'Книга для Избранного' in result
         assert 'Книга не для Избранного' not in result
-    
     
