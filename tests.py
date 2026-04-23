@@ -84,4 +84,13 @@ class TestBooksCollector:
         
         assert 'Приключения Шерлока Холмса' in collector.get_list_of_favorites_books()
     
+    def test_delete_book_from_favorites_nonexistent_book_no_changes_to_favorites(self):
+        collector = BooksCollector()
+        collector.add_new_book ('Приключения Шерлока Холмса')
+        collector.add_book_in_favorites('Приключения Шерлока Холмса')
+        collector.delete_book_from_favorites('Неизвестная книга')
+
+        assert 'Приключения Шерлока Холмса' in collector.get_list_of_favorites_books()
+        assert len(collector.get_list_of_favorites_books()) == 1
+    
     
