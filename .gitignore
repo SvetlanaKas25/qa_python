@@ -1,0 +1,8 @@
+# Игнорирование папки __pycache__
+__pycache__/
+
+# Игнорирование папки .venv
+.venv/
+
+# Игнорирование папки .pytest_cache/
+.pytest_cache/
